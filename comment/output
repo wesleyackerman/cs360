@@ -1,0 +1,54 @@
+nohup: ignoring input
+
+> comment@0.0.0 start /home/bitnami/comment
+> node ./bin/www
+
+Connected
+[0mGET / [36m304 [0m5.661 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m1.439 ms - -[0m
+In the GET route?
+[0mGET /comment [36m304 [0m18.026 ms - -[0m
+[0mGET / [32m200 [0m2.652 ms - 905[0m
+[0mGET /javascripts/comments.js [32m200 [0m1.271 ms - 1900[0m
+Find by name: Wes
+[ { __v: 0,
+    Comment: 'Another one',
+    Name: 'Wes',
+    _id: 56e71ae55e2fb32574f05c84 },
+  { __v: 0,
+    Comment: 'Hi there',
+    Name: 'Wes',
+    _id: 56e71b1c4727c43e742d31b4 },
+  { __v: 0,
+    Comment: 'MongoDB is cool',
+    Name: 'Wes',
+    _id: 56e71b6a4727c43e742d31b7 } ]
+[0mPOST /commentsByName [32m200 [0m21.393 ms - 242[0m
+In the GET route?
+[0mGET /comment [32m200 [0m1.870 ms - 413[0m
+POST comment route
+{ Name: 'Bill Gates', Comment: 'Cool site bro!' }
+{ _id: 56e71bc5de3fee7174bd86a9,
+  Comment: 'Cool site bro!',
+  Name: 'Bill Gates' }
+{ _id: 56e71bc5de3fee7174bd86a9,
+  Comment: 'Cool site bro!',
+  Name: 'Bill Gates',
+  __v: 0 }
+[0mPOST /comment [32m200 [0m14.522 ms - 2[0m
+In the GET route?
+[0mGET /comment [32m200 [0m2.048 ms - 503[0m
+Find by name: Wes
+[ { __v: 0,
+    Comment: 'Another one',
+    Name: 'Wes',
+    _id: 56e71ae55e2fb32574f05c84 },
+  { __v: 0,
+    Comment: 'Hi there',
+    Name: 'Wes',
+    _id: 56e71b1c4727c43e742d31b4 },
+  { __v: 0,
+    Comment: 'MongoDB is cool',
+    Name: 'Wes',
+    _id: 56e71b6a4727c43e742d31b7 } ]
+[0mPOST /commentsByName [32m200 [0m1.949 ms - 242[0m

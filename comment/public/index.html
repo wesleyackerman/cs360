@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Comments!</title>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="javascripts/comments.js"></script>
+</head>
+
+<body>
+	<form id="commentForm" action="">
+		<label for="name">Name: </label>
+		<input type="text" id="Name" placeholder="Name"><br>
+		<label for="comment">comment: </label>
+		<input type="text" id="Comment" placeholder="Comment"><br>
+	</form><br>
+	<button id="serialize">Serialize form values</button>
+	<button id="getThem">Get All Comments</button><br><br>
+	<form id="getByNameForm">
+		<label for="queryName">Find All Comments with Name:</label>
+		<input type="text" id="QueryName" placeholder="Name">
+	</form>
+	<button id="getByName">Get All Comments with Name</button><br><br>
+	<button id="removeAll">Clear Database</button><br><br>
+	<div id="json"></div>
+	<div id="done"></div>
+	<div id="comments"></div>
+</body>
+</html>
